@@ -1,0 +1,20 @@
+{
+  "name": "atlas",
+  "version": "0.1.0",
+  "description": "Atlas — AMOLED-black, compact, engineering-grade design system. Framework-agnostic tokens and component classes for any stack.",
+  "author": {
+    "name": "pacifio",
+    "url": "https://github.com/pacifio"
+  },
+  "repository": "https://github.com/pacifio/ui",
+  "license": "MIT",
+  "keywords": [
+    "design-system",
+    "ui",
+    "css",
+    "tokens",
+    "components",
+    "dark-theme",
+    "amoled"
+  ]
+}
