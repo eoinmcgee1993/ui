@@ -87,7 +87,7 @@ export default function HomePage() {
             </div>
             <div className="ks-meta-banner-stat ks-meta-banner-stat-wide">
               <div className="ks-meta-banner-stat-head">
-                <div className="ks-meta-banner-stat-value">4</div>
+                <div className="ks-meta-banner-stat-value">5</div>
                 <div className="ks-meta-banner-stat-label">Mockups</div>
               </div>
               <BannerMockupsMini />
@@ -178,6 +178,7 @@ const MOCKUPS = [
   { href: "/mockups/ecommerce", title: "E-commerce", tag: "Retail", desc: "Catalog, filter sidebar, product grid, sliding cart drawer." },
   { href: "/mockups/multi-agent", title: "Multi-agent", tag: "Agent UI", desc: "Parallel agents with live status, tool calls, generative UI cards." },
   { href: "/mockups/news", title: "News & polls", tag: "Media", desc: "Lead story, category feed, live polls, markets ticker." },
+  { href: "/mockups/stocks", title: "Stocks", tag: "Finance", desc: "Watchlist, live chart, level-2 order book, news rail — ticks every 2s." },
 ];
 
 /* ---------- Meta banner illustrations ---------- */
@@ -237,6 +238,7 @@ function BannerMockupsMini() {
     { name: "E-commerce", tag: "Retail", href: "/mockups/ecommerce" },
     { name: "Multi-agent", tag: "Agent UI", href: "/mockups/multi-agent" },
     { name: "News & polls", tag: "Media", href: "/mockups/news" },
+    { name: "Stocks", tag: "Finance", href: "/mockups/stocks" },
   ];
   return (
     <div style={{ display: "flex", flexDirection: "column", marginTop: 10, paddingTop: 10, borderTop: "1px solid var(--border-subtle)" }}>

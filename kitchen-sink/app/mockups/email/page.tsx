@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 
-const FOLDERS = [
+type Folder = { id: string; label: string; icon: string; count?: number };
+
+const FOLDERS: Folder[] = [
   { id: "inbox", label: "Inbox", count: 4, icon: "M22 12h-6l-2 3h-4l-2-3H2|M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" },
   { id: "starred", label: "Starred", icon: "M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" },
   { id: "sent", label: "Sent", icon: "M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z" },
@@ -10,9 +12,19 @@ const FOLDERS = [
   { id: "archive", label: "Archive", icon: "M21 8v13H3V8|M1 3h22v5H1zM10 12h4" },
   { id: "spam", label: "Spam", icon: "circle:12,12,10|M12 8v4|M12 16h.01" },
   { id: "trash", label: "Trash", icon: "polyline:3 6 5 6 21 6|M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" },
-] as const;
+];
 
-const EMAILS = [
+type Email = {
+  id: string;
+  from: string;
+  subject: string;
+  preview: string;
+  time: string;
+  label: string;
+  unread?: boolean;
+};
+
+const EMAILS: Email[] = [
   { id: "e1", from: "Vercel", subject: "Deploy succeeded — atlas-edge", preview: "Your production deploy finished in 1m 24s. View logs →", time: "12:42", unread: true, label: "prod" },
   { id: "e2", from: "GitHub", subject: "PR #217 needs your review", preview: "feat(cache): add tag-based invalidation. Paul requested review …", time: "11:08", unread: true, label: "code" },
   { id: "e3", from: "Linear", subject: "3 new issues assigned to you", preview: "ATLAS-42 light-mode shadows too strong · ATLAS-43 collapsible sidebar …", time: "09:50", unread: true, label: "triage" },
@@ -23,7 +35,7 @@ const EMAILS = [
   { id: "e8", from: "Figma", subject: "Sarah commented on Atlas v0.2 tokens", preview: "\"Tweaking the spacing scale to add a 6px? I see it in the ultra-compact cases…\"", time: "Mon", label: "design" },
   { id: "e9", from: "Notion", subject: "Q4 roadmap shared with you", preview: "Q4 planning doc · 12 sections · updated 2h ago", time: "Mon", label: "doc" },
   { id: "e10", from: "AWS", subject: "Cost anomaly detected — EC2", preview: "Spend up 34% over the trailing 7-day average in us-east-1.", time: "Nov 18", label: "alert" },
-] as const;
+];
 
 function Icon({ paths, size = 16, stroke = 1.5 }: { paths: string; size?: number; stroke?: number }) {
   const parts = paths.split("|");

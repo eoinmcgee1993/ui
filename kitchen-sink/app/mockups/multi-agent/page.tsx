@@ -81,8 +81,8 @@ export default function MultiAgentMockupPage() {
             );
           })}
         </nav>
-        <div style={{ padding: 12, borderTop: "1px solid var(--border-default)" }}>
-          <div style={{ fontSize: 10, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--text-tertiary)", fontWeight: 600, marginBottom: 8 }}>Usage · this session</div>
+        <div style={{ height: 72, boxSizing: "border-box", padding: 12, borderTop: "1px solid var(--border-default)", flex: "none", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+          <div style={{ fontSize: 10, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--text-tertiary)", fontWeight: 600, marginBottom: 6 }}>Usage · this session</div>
           <div className="atlas-progress" style={{ marginBottom: 6 }}>
             <div className="atlas-progress-bar" style={{ width: "58%" }} />
           </div>
@@ -247,8 +247,8 @@ export default function MultiAgentMockupPage() {
         </div>
 
         {/* Composer */}
-        <div style={{ padding: 14, borderTop: "1px solid var(--border-default)", background: "var(--bg-raised)" }}>
-          <div style={{ display: "flex", gap: 6, alignItems: "center", padding: "6px 8px", background: "var(--bg-input)", border: "1px solid var(--border-default)", borderRadius: 8 }}>
+        <div style={{ height: 72, boxSizing: "border-box", padding: 14, borderTop: "1px solid var(--border-default)", background: "var(--bg-raised)", flex: "none", display: "flex", alignItems: "center" }}>
+          <div style={{ display: "flex", gap: 6, alignItems: "center", padding: "6px 8px", background: "var(--bg-input)", border: "1px solid var(--border-default)", borderRadius: 8, width: "100%" }}>
             <button className="atlas-btn atlas-btn-icon" aria-label="Attach"><Icon paths="M21.44 11.05 12.25 20.24a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" /></button>
             <span className="atlas-pill atlas-pill-active" style={{ fontSize: 11 }}>@Researcher</span>
             <input className="atlas-input" placeholder="Delegate to an agent…" style={{ flex: 1, background: "transparent", border: 0, padding: 0, height: 28 }} readOnly />

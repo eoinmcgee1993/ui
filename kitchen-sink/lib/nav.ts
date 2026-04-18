@@ -119,6 +119,7 @@ export const NAV: NavGroup[] = [
       { title: "E-commerce", href: "/mockups/ecommerce" },
       { title: "Multi-agent", href: "/mockups/multi-agent" },
       { title: "News & polls", href: "/mockups/news" },
+      { title: "Stocks", href: "/mockups/stocks" },
     ],
   },
 ];

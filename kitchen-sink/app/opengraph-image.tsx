@@ -13,55 +13,67 @@ export default async function OpengraphImage() {
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          background:
-            "radial-gradient(ellipse 900px 600px at 15% 10%, rgba(0, 112, 243, 0.22), transparent 60%), radial-gradient(ellipse 800px 500px at 85% 90%, rgba(237, 237, 237, 0.08), transparent 60%), #000",
-          color: "#fff",
+          background: "#050505",
+          color: "#ffffff",
           fontFamily: "system-ui, -apple-system, sans-serif",
-          padding: 64,
-          position: "relative",
+          padding: 80,
         }}
       >
-        {/* Top band — brand */}
+        {/* Brand row */}
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <div
             style={{
-              width: 40,
-              height: 40,
+              width: 36,
+              height: 36,
               borderRadius: "50%",
-              background: "#fff",
-              boxShadow: "0 0 0 2px rgba(255,255,255,0.1)",
+              background: "#ffffff",
             }}
           />
-          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-            <div style={{ fontSize: 28, fontWeight: 700, letterSpacing: "-0.02em" }}>Atlas</div>
-            <div
-              style={{
-                fontSize: 12,
-                letterSpacing: "0.12em",
-                textTransform: "uppercase",
-                color: "#777",
-                fontWeight: 600,
-                padding: "4px 10px",
-                border: "1px solid #1e1e1e",
-                borderRadius: 4,
-                display: "flex",
-              }}
-            >
-              v0.2 · MIT
-            </div>
+          <div
+            style={{
+              fontSize: 26,
+              fontWeight: 700,
+              letterSpacing: "-0.02em",
+              color: "#ffffff",
+            }}
+          >
+            Atlas
+          </div>
+          <div
+            style={{
+              marginLeft: 8,
+              fontSize: 11,
+              letterSpacing: "0.12em",
+              textTransform: "uppercase",
+              color: "#777777",
+              fontWeight: 600,
+              padding: "5px 10px",
+              border: "1px solid #1e1e1e",
+              borderRadius: 4,
+              display: "flex",
+            }}
+          >
+            v0.2 · MIT
           </div>
         </div>
 
-        {/* Main — headline + subtitle */}
-        <div style={{ display: "flex", flexDirection: "column", flex: 1, justifyContent: "center", marginTop: 24 }}>
+        {/* Main centered block */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            flex: 1,
+            justifyContent: "center",
+          }}
+        >
           <div
             style={{
-              fontSize: 16,
-              letterSpacing: "0.16em",
+              fontSize: 13,
+              letterSpacing: "0.18em",
               textTransform: "uppercase",
-              color: "#0070f3",
-              fontWeight: 700,
-              marginBottom: 24,
+              color: "#aaaaaa",
+              fontWeight: 600,
+              marginBottom: 22,
               display: "flex",
             }}
           >
@@ -69,12 +81,12 @@ export default async function OpengraphImage() {
           </div>
           <div
             style={{
-              fontSize: 104,
+              fontSize: 92,
               fontWeight: 700,
               letterSpacing: "-0.045em",
               lineHeight: 0.98,
-              color: "#fff",
-              marginBottom: 32,
+              color: "#ffffff",
+              marginBottom: 26,
               maxWidth: 900,
               display: "flex",
             }}
@@ -83,12 +95,12 @@ export default async function OpengraphImage() {
           </div>
           <div
             style={{
-              fontSize: 28,
-              lineHeight: 1.35,
-              color: "#aaa",
-              maxWidth: 820,
+              fontSize: 24,
+              lineHeight: 1.4,
+              color: "#aaaaaa",
+              maxWidth: 760,
               fontWeight: 400,
-              letterSpacing: "-0.01em",
+              letterSpacing: "-0.005em",
               display: "flex",
             }}
           >
@@ -96,39 +108,22 @@ export default async function OpengraphImage() {
           </div>
         </div>
 
-        {/* Footer — mock UI chips + repo */}
-        <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 32 }}>
+        {/* Footer row */}
+        <div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 20 }}>
           <div
             style={{
               display: "flex",
               alignItems: "center",
-              gap: 10,
-              padding: "10px 18px",
+              padding: "11px 20px",
               background: "#ededed",
-              color: "#000",
+              color: "#000000",
               borderRadius: 9999,
-              fontSize: 18,
+              fontSize: 17,
               fontWeight: 600,
               letterSpacing: "-0.005em",
             }}
           >
-            Get started
-          </div>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 10,
-              padding: "10px 18px",
-              background: "transparent",
-              color: "#aaa",
-              border: "1px solid #1e1e1e",
-              borderRadius: 9999,
-              fontSize: 18,
-              fontWeight: 500,
-            }}
-          >
-            Browse components
+            Get started →
           </div>
           <div style={{ flex: 1 }} />
           <div
@@ -136,13 +131,13 @@ export default async function OpengraphImage() {
               display: "flex",
               alignItems: "center",
               gap: 10,
-              padding: "10px 14px",
+              padding: "9px 14px",
               background: "#0f0f0f",
               border: "1px solid #1e1e1e",
               borderRadius: 8,
               fontFamily: "ui-monospace, SFMono-Regular, monospace",
-              fontSize: 16,
-              color: "#aaa",
+              fontSize: 15,
+              color: "#aaaaaa",
             }}
           >
             <div
@@ -153,15 +148,8 @@ export default async function OpengraphImage() {
                 background: "#50e3c2",
               }}
             />
-            github.com/pacifio/ui
+            ui.pacifio.dev
           </div>
-        </div>
-
-        {/* Decorative dots in corner */}
-        <div style={{ position: "absolute", top: 64, right: 64, display: "flex", gap: 8 }}>
-          <div style={{ width: 10, height: 10, borderRadius: "50%", background: "#50e3c2" }} />
-          <div style={{ width: 10, height: 10, borderRadius: "50%", background: "#CD9731" }} />
-          <div style={{ width: 10, height: 10, borderRadius: "50%", background: "#F44747" }} />
         </div>
       </div>
     ),
