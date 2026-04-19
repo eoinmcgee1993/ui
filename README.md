@@ -71,7 +71,11 @@ your clipboard — paste it into any agent chat and get faithful Atlas output.
 ### 1. As a Claude Code skill (recommended)
 
 ```bash
-/plugin install pacifio/ui
+# 1. Register this repo as a marketplace
+/plugin marketplace add pacifio/ui
+
+# 2. Install the atlas plugin from it
+/plugin install atlas@atlas-ui
 ```
 
 Your agent now reads the Atlas skill on every UI task and generates code in

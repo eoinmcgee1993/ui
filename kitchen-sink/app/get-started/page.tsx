@@ -9,8 +9,9 @@ const STACKS = [
     id: "agent",
     label: "For your agent",
     note: "One command. Works with any coding agent that can read a repo.",
-    code: `# Claude Code
-/plugin install pacifio/ui
+    code: `# Claude Code — two commands
+/plugin marketplace add pacifio/ui
+/plugin install atlas@atlas-ui
 
 # Cursor, Windsurf, Cody, etc.
 # Point the agent at this repo's skills/atlas/ directory.

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "atlas-ui",
+  "description": "Atlas — the drop-in design language for agent UI. Framework-agnostic tokens, 50+ component classes, and multi-surface patterns that any coding agent can read and translate into shadcn, Tailwind, React, Vue, or raw HTML.",
+  "owner": {
+    "name": "pacifio",
+    "url": "https://github.com/pacifio"
+  },
+  "plugins": [
+    {
+      "name": "atlas",
+      "source": "./",
+      "description": "Atlas design language skill. 180+ tokens, 50+ .atlas-* component classes, ~8 markdown reference docs (tokens, components, theming, patterns, responsive, motion, lessons, examples). Teaches coding agents the Atlas aesthetic, vocabulary, and composition recipes — they generate code in your target stack.",
+      "version": "0.2.0",
+      "author": {
+        "name": "pacifio",
+        "url": "https://github.com/pacifio"
+      },
+      "license": "MIT",
+      "repository": "https://github.com/pacifio/ui",
+      "keywords": [
+        "design-system",
+        "ui",
+        "css",
+        "tokens",
+        "components",
+        "dark-theme",
+        "amoled",
+        "agent-ui",
+        "ai",
+        "shadcn",
+        "tailwind"
+      ],
+      "category": "design"
+    }
+  ]
+}
