@@ -414,7 +414,8 @@ Next.js 16 app.
 ```
 ui/
 ├── .claude-plugin/
-│   └── plugin.json                ← Claude Code plugin manifest
+│   ├── marketplace.json           ← registers the repo as a Claude Code marketplace
+│   └── plugin.json                ← Claude Code plugin manifest (served by the marketplace)
 ├── skills/
 │   └── atlas/                     ← For agents
 │       ├── SKILL.md               ←   entry point (read first)

@@ -230,8 +230,9 @@ export default function GetStartedPage() {
 
         <CodeBlock
           lang="bash"
-          code={`# Claude Code — one command
-/plugin install pacifio/ui
+          code={`# Claude Code — two commands (marketplace, then plugin)
+/plugin marketplace add pacifio/ui
+/plugin install atlas@atlas-ui
 
 # Other agents — point them at the skill directory
 # They read the markdown, learn the rules, and generate code in your stack.`}
@@ -380,8 +381,8 @@ export default function GetStartedPage() {
             {
               tag: "For install",
               title: ".claude-plugin/",
-              files: ["plugin.json"],
-              desc: "Registers the skill so Claude Code can install it via /plugin install pacifio/ui.",
+              files: ["marketplace.json", "plugin.json"],
+              desc: "Makes the repo a Claude Code marketplace (marketplace.json) that serves the atlas plugin (plugin.json). Install via /plugin marketplace add pacifio/ui then /plugin install atlas@atlas-ui.",
             },
           ].map((f) => (
             <div key={f.title} style={{ border: "1px solid var(--border-default)", borderRadius: 8, background: "var(--bg-raised)", overflow: "hidden" }}>
