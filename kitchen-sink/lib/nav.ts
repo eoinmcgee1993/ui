@@ -120,6 +120,7 @@ export const NAV: NavGroup[] = [
       { title: "Multi-agent", href: "/mockups/multi-agent" },
       { title: "News & polls", href: "/mockups/news" },
       { title: "Stocks", href: "/mockups/stocks" },
+      { title: "Form builder", href: "/mockups/form-builder" },
     ],
   },
 ];

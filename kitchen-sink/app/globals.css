@@ -532,6 +532,24 @@ a { color: inherit; text-decoration: none; }
 
 .ks-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-3); }
 
+/* Form builder mockup — 3-col shell: outline / canvas / properties */
+.ks-form-builder {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr) 300px;
+  grid-template-rows: 56px minmax(0, 1fr);
+}
+@media (max-width: 1200px) {
+  .ks-form-builder { grid-template-columns: 240px minmax(0, 1fr) 280px; }
+}
+@media (max-width: 1000px) {
+  .ks-form-builder { grid-template-columns: 240px minmax(0, 1fr); }
+  .ks-form-builder .ks-fb-props { display: none; }
+}
+@media (max-width: 760px) {
+  .ks-form-builder { grid-template-columns: minmax(0, 1fr); }
+  .ks-form-builder .ks-fb-rail { display: none; }
+}
+
 /* Stocks mockup — responsive 3-column shell */
 .ks-stocks-shell {
   display: grid;
